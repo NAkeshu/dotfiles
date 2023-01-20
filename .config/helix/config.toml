@@ -42,6 +42,8 @@ skip-levels = 1
 "A-w" = ":write"
 "C-e" = "scroll_down"
 "C-y" = "scroll_up"
+"C-j" = ["move_line_down", "move_line_down", "move_line_down", "move_line_down", "move_line_down"]
+"C-k" = ["move_line_up", "move_line_up", "move_line_up", "move_line_up", "move_line_up"]
 
 [keys.insert]
 "C-e" = "goto_line_end_newline"
