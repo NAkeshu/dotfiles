@@ -1,5 +1,5 @@
 font:
-  size: 10
+  size: 13
   normal:
     family: Caskaydia Cove Nerd Font
     style: Regular
@@ -13,7 +13,21 @@ font:
     style: italic
 
 window:
-  opacity: 0.85
+  dimensions:
+    columns: 136
+    lines: 40
+
+  padding:
+    x: 0
+    y: 0
+
+  dynamic_padding: false
+
+  # decorations: none
+
+  startup_mode: Windowed
+
+  opacity: 0.9
 
 import:
   - keys.yml
