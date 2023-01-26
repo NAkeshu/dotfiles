@@ -40,6 +40,7 @@ skip-levels = 1
 [keys.normal]
 "A-q" = ":quit"
 "A-w" = ":write"
+"A-x" = "extend_line_above"
 "C-e" = "scroll_down"
 "C-y" = "scroll_up"
 "C-j" = ["move_line_down", "move_line_down", "move_line_down", "move_line_down", "move_line_down"]
@@ -54,4 +55,5 @@ skip-levels = 1
 "C-b" = "move_char_left"
 
 [keys.select]
+"A-x" = "extend_line_above"
 
