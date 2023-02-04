@@ -10,8 +10,8 @@ if [[ -z "$TMUX" ]] ;then
     fi
 fi
 
-# default editor: vscode
-export EDITOR=code
+# default editor: helix
+export EDITOR=hx
 
 # Trash
 # alias rm='trash -F'
