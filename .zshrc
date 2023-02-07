@@ -2,7 +2,8 @@ source ~/.bash_profile
 
 # automatically start tmux
 if [[ -z "$TMUX" ]] ;then
-    ID="`tmux ls | grep -vm1 attached | cut -d: -f1`" # get the id of a deattached session
+    # ID="`tmux ls | grep -vm1 attached | cut -d: -f1`" # get the id of the first deattached session
+    ID="`tmux ls | grep -v attached | tail -n 1 | cut -d: -f1`" # get the id of the last deattached session
     if [[ -z "$ID" ]] ;then # if not available create a new one
         tmux new-session
     else
