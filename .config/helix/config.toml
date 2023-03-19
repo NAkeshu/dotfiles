@@ -53,6 +53,7 @@ skip-levels = 1
 "C-n" = "move_line_down"
 "C-f" = "move_char_right"
 "C-b" = "move_char_left"
+"A-ret" = ["normal_mode", "open_above"]
 
 [keys.select]
 "A-x" = "extend_line_above"
