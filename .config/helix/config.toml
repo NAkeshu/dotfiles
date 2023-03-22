@@ -45,6 +45,8 @@ skip-levels = 1
 "C-y" = "scroll_up"
 "C-j" = ["move_line_down", "move_line_down", "move_line_down", "move_line_down", "move_line_down"]
 "C-k" = ["move_line_up", "move_line_up", "move_line_up", "move_line_up", "move_line_up"]
+"S-up" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+"S-down" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 
 [keys.insert]
 "C-e" = "goto_line_end_newline"
@@ -57,4 +59,5 @@ skip-levels = 1
 
 [keys.select]
 "A-x" = "extend_line_above"
-
+"S-up" = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+"S-down" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
