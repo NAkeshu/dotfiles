@@ -5,6 +5,8 @@ true-color = true
 cursorline = true
 bufferline = "always"
 color-modes = true
+auto-format = false
+auto-save = true
 # gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
 
 [editor.statusline]
