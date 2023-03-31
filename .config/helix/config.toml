@@ -1,9 +1,11 @@
-theme = "ayu_mirage"
+theme = "catppuccin_mocha"
 
 [editor]
 true-color = true
 cursorline = true
 bufferline = "always"
+color-modes = true
+# gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
 
 [editor.statusline]
 left = ["mode"]
@@ -13,8 +15,12 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
+[editor.soft-wrap]
+enable = true
+
 [editor.lsp]
 display-messages = true
+display-inlay-hints = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -36,6 +42,9 @@ tabpad = "·" # Tabs will look like "→···" (depending on tab width)
 render = true
 character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
 skip-levels = 1
+
+[editor.gutters]
+layout = ["diff", "diagnostics", "line-numbers", "spacer"]
 
 [keys.normal]
 "A-q" = ":quit"
