@@ -41,6 +41,14 @@ alias df='duf'
 # brew alias
 alias brewcl='brew cleanup --prune 0'
 alias brewup='brew update && brew upgrade && brew upgrade --cask --greedy'
+function brewrecord() {
+    # record installed brew formulae and cask apps
+    local recordtime=$(date "+%Y-%m-%d %H:%M")
+    local brewleaves=$(brew leaves)
+    local brewcaskapps=$(brew list --cask)
+    local record_context="Contents installed by homebrew as of "$recordtime"\n\n== brew formulae ==\n"$brewleaves"\n\n== brew cask apps ==\n"$brewcaskapps
+    echo $record_context > brew_apps.txt
+}
 
 # cargo alias
 # cargo-cache
