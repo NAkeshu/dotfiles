@@ -57,3 +57,7 @@ alias cargocl='cargo cache -a'
 # cargo-update
 alias cargoup='cargo install-update -a'
 
+# code lines counter
+alias clocpy='cloc --include-lang="Python","Jupyter Notebook"'
+alias clocmd='cloc --include-lang="Markdown"'
+alias clocjl='cloc --include-lang="Julia"'
