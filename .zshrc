@@ -34,6 +34,19 @@ if [ "$(command -v exa)" ]; then
     alias ll='exa -l --color always --icons -a -s type'
 fi
 
+# eza -> ls
+if [ "$(command -v eza)" ]; then
+    unalias -m 'll'
+    unalias -m 'l'
+    unalias -m 'la'
+    unalias -m 'ls'
+    unalias -m 'tree'
+    alias ls='eza --icons=auto --color=auto --sort=type'
+    alias la='eza -a --icons=auto --color=auto --sort=type'
+    alias ll='eza -al --icons=auto --color=always --sort=type --mounts --header'
+    alias tree='eza -Ta --icons=auto --color=always'
+fi
+
 # dust -> du, duf -> df
 alias du='dust'
 alias df='duf'
